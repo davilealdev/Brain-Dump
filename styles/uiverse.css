@@ -89,10 +89,38 @@ button:active {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
   background: rgba(0, 0, 0, 0.4);
   filter: blur(20px);
   transform-style: preserve-3d;
   transform: rotateX(90deg) translateZ(-65px);
+}
+
+
+
+/* BOTÃO DO UIVERSE */
+/* From Uiverse.io by levxyca */ 
+button#createBtn {
+  font-size: 1.5rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: -20px;
+  border-radius: 10px;
+  border: 2px solid #17690b;
+  background: #3bdb17;
+  box-shadow: 3px 3px #228709;
+  cursor: pointer;
+  margin: 35px 0;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+button#createBtn > a{
+  color: rgb(61, 115, 25);
+}
+
+button#createBtn:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }

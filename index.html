@@ -57,9 +57,9 @@
   <body>
     <nav>
       <h1 id="title">
-        <a href="">Brain<span style="color: rgb(1, 86, 11);">Dump</span></a>
+        <a style="font-size: 40px; margin-left: 10px; margin-top: 20px;" href="">Brain<span style="color: rgb(1, 86, 11);">Dump</span></a>
       </h1>
-      <h3 id="createBtn"><a href="create.html">Criar Tópico</a></h3>
+      <button id="createBtn"><a href="create.html">Criar </a></button>
 
       <input
         type="search"
@@ -71,21 +71,36 @@
       <!-- <button id="closeButton" onclick="sairDoApp()">x</button> -->
     </nav>
     <main>
-      <img class="rand"
-        style="width: 350px; z-index: 0; position: fixed"
-        src="images/Randonetheone.png"
-        alt=""
-      />
 
       <div id="counter">
         Tópicos Postados: <span id="topics-counter">0</span>
       </div>
+      
+      <img class="rand"
+        
+        src="images/Randonetheone.png"
+        alt=""
+      />
 
       <div id="container">
-        <p id="aviso" style="text-align: center; color: rgb(15, 205, 15); font-size: 30px; margin-top: 130px;margin-bottom: 0px;">Você não postou nenhum tópico ainda
+
+
+        <div id="aviso" style="text-align: center; color: rgb(15, 205, 15); font-size: 30px;">
+
           <br>
-          clique em <a style="color:rgb(56, 255, 56); text-decoration: underline;" href="create.html">Criar tópico</a> para criar o seu primeiro post no Brain Dump
-        </p>
+          <br>
+          <br>
+          Você não postou nenhum tópico ainda
+          <br>
+          clique em 
+          
+          <a id="warning-link" href="create.html">Criar Tópico</a>
+           
+          para criar o seu primeiro post no Brain Dump
+        </div>
+        
+
+
       </div>
       <div class="tree-div">
         <div class="tree">

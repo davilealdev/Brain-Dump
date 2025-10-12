@@ -12,7 +12,7 @@ a {
 body {
   margin: 0px;
   overflow: hidden;
-  background-color: #202020;
+  background-color: #040500;
   color: white;
 }
 
@@ -25,6 +25,7 @@ nav {
   border-width: 0px 0px 10px 0px;
   border-color: rgb(35, 212, 35);
   border-style: solid;
+  height: 80px;
 
   & h1 {
     font-size: 30px;
@@ -83,9 +84,28 @@ nav {
 #counter {
   margin-top: 400px;
   position: fixed;
+  z-index: 10;
   font-size: 20px;
   font-weight: 700;
   margin-left: 10px;
+  margin-top: 20px;
+}
+
+.rand{
+  width: 350px;
+  z-index: 10;
+  position: fixed;
+  margin-top: 30px;
+}
+
+#warning-link{
+  color: rgb(56, 255, 56);
+  text-decoration: underline;
+  cursor: pointer; 
+}
+
+#warning-link:hover{
+  cursor: pointer;
 }
 
 #topics-counter {
@@ -119,9 +139,9 @@ nav {
   margin-bottom: 20px;
   background-color: #aec446;
   padding: 10px;
-
   border-width: 3px 7px 9px 3px;
-  border-color: rgb(0, 0, 0);
+  border-radius: 7px;
+  border-color: rgb(30, 73, 5);
   border-style: solid;
 }
 
@@ -133,7 +153,7 @@ nav {
 #thread-title::placeholder,
 #edit-title::placeholder,
 textarea::placeholder {
-  color: #068110;
+  color: #077010;
 }
 
 #topic-prev {

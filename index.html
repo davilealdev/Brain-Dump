@@ -1,3 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Braindump | Home</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/uiverse.css">
+    <link rel="stylesheet" href="styles/cellVersion.css">
+    <link rel="shortcut icon" href="images/Randonetheone.png" type="image/x-icon">
+  </head>
+  <body>
+    <nav>
+      <h1 id="title">
+        <a style="font-size: 40px; margin-left: 10px; margin-top: 20px;" href="">Brain<span style="color: rgb(1, 86, 11);">Dump</span></a>
+      </h1>
+      
+
+      <input
+        type="search"
+        name="searchbar"
+        id="searchbar"
+        placeholder="Pesquisar Tópico..."
+      />
+      <button id="searchBtn">🔍</button>
+      <!-- <button id="closeButton" onclick="sairDoApp()">x</button> -->
+    </nav>
+    <main>
+
+      <div id="counter">
+        Tópicos Postados: <span id="topics-counter">0</span>
+        <br>
+        <abbr title="Criar Novo Tópico"><a href="create.html"> <button id="createBtn">+</button> </a></abbr>
+      </div>
+      
+      <img class="rand"
+        
+        src="images/Randonetheone.png"
+        alt=""
+      />
+
+      <div id="container">
+
+
+        <div id="aviso" style="text-align: center; color: rgb(15, 205, 15); font-size: 30px;">
+
+          <br>
+          <br>
+          <br>
+          Você não postou nenhum tópico ainda
+          <br>
+          clique em 
+          
+          <a id="warning-link" href="create.html">Criar Tópico</a>
+           
+          para criar o seu primeiro post no Brain Dump
+        </div>
+        
+
+
+      </div>
+      
+      <div id="todo">
+
+        <!-- From Uiverse.io by WhiteNervosa --> 
+<div class="textInputWrapper">
+    <input placeholder="Type Here" type="text" class="textInput">
+</div>
+      </div>
+
+
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll.js"></script>
+
+    <script>
+      const { app } = require('@electron/remote');
+      function sairDoApp() {
+      app.quit();
+  }
+</script>
+
+</script>
+  </body>
+</html>
+
+
+
 <!--                                                                                
                              ▒▒▒▒▒▒▒▒▒▒                                                              
                            ▒▒▒▒▒▒▒▒▒▒▒▒▒▒           ▒▒▒▒▒▒▒▒▒▒▒                                      
@@ -39,119 +131,5 @@
                                              ▓▓▓▓▓▓▓██▓▒▒▒▓▓▓██     ▓▓▓▓▓█▓▓▓▓▓                      
                                                 ▓▓▓▓██▓▓▓▓▓▓██                                       
                                                   ▓▓  ▓▓▓▓▓█                                         
-                                                                                              
+                                                                                                       
 -->
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Braindump | Home</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/uiverse.css">
-    <link rel="stylesheet" href="styles/cellVersion.css">
-    <link rel="shortcut icon" href="images/Randonetheone.png" type="image/x-icon">
-  </head>
-  <body>
-    <nav>
-      <h1 id="title">
-        <a style="font-size: 40px; margin-left: 10px; margin-top: 20px;" href="">Brain<span style="color: rgb(1, 86, 11);">Dump</span></a>
-      </h1>
-      <button id="createBtn"><a href="create.html">Criar </a></button>
-
-      <input
-        type="search"
-        name="searchbar"
-        id="searchbar"
-        placeholder="Pesquisar Tópico..."
-      />
-      <button id="searchBtn">🔍</button>
-      <!-- <button id="closeButton" onclick="sairDoApp()">x</button> -->
-    </nav>
-    <main>
-
-      <div id="counter">
-        Tópicos Postados: <span id="topics-counter">0</span>
-      </div>
-      
-      <img class="rand"
-        
-        src="images/Randonetheone.png"
-        alt=""
-      />
-
-      <div id="container">
-
-
-        <div id="aviso" style="text-align: center; color: rgb(15, 205, 15); font-size: 30px;">
-
-          <br>
-          <br>
-          <br>
-          Você não postou nenhum tópico ainda
-          <br>
-          clique em 
-          
-          <a id="warning-link" href="create.html">Criar Tópico</a>
-           
-          para criar o seu primeiro post no Brain Dump
-        </div>
-        
-
-
-      </div>
-      <div class="tree-div">
-        <div class="tree">
-          <div class="branch" style="--x:0">
-            <span style="--i:0;"></span>
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-          </div>
-          <div class="branch" style="--x:1">
-            <span style="--i:0;"></span>
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-          </div>
-          <div class="branch" style="--x:2">
-            <span style="--i:0;"></span>
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-          </div>
-          <div class="branch" style="--x:3">
-            <span style="--i:0;"></span>
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-          </div>
-          <div class="stem">
-            <span style="--i:0;"></span>
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-          </div>
-          <span class="shadow"></span>
-        </div>
-      </div>
-
-
-    </main>
-
-    <script src="js/index.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/scroll.js"></script>
-
-    <script>
-      const { app } = require('@electron/remote');
-      function sairDoApp() {
-      app.quit();
-  }
-</script>
-
-</script>
-  </body>
-</html>

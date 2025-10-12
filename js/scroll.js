@@ -4,9 +4,9 @@ const sr = ScrollReveal ({
     delay: 400,
     reset: true
 })
-sr.reveal(' .tree-div', {delay:200, origin:'top'})
-sr.reveal(' .rand', {delay:200, origin:'top'})
-sr.reveal(' #counter', {delay:200, origin:'top'})
+sr.reveal(' .tree-div', {delay:200, origin:'right'})
+sr.reveal(' .rand', {delay:200, origin:'left'})
+sr.reveal(' #counter', {delay:300, origin:'left'})
 sr.reveal(' #aviso', {delay:200, origin:'top'})
 sr.reveal(' #title', {delay:200, origin:'left'})
 sr.reveal(' #createBtn', {delay:200, origin:'left'})

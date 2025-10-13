@@ -75,7 +75,7 @@ searchButton.addEventListener("click", () => {
     container.innerHTML = `
     <p style='text-align:center; font-size:20px; color:#aac525;'>Nenhum tópico encontrado.</p> 
     <br> 
-    <img style="width:180px;margin-left:310px;" src="images/sad frogone.png">
+    <img style="width:180px;margin-left:490px;" src="images/sad frogone.png">
     `;
     return;
   }

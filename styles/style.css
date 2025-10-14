@@ -24,7 +24,7 @@ hr{
 }
 
 nav {
-  background-image: linear-gradient(to left,#aec446 ,#9db819);
+  background-image: linear-gradient(to right,#aec446 ,#dcf469);
   padding: 10px;
   margin-left: 0px;
   display: flex;
@@ -66,21 +66,23 @@ nav {
     font-size: larger;
     border-radius: 5px 0px 0px 15px;
     border: 4px 4px 0px 34px;
-    border-color: #000;
+    border-color: #b3ff10;
     width: 290px;
     border: 2px;
   }
 
   #searchbar::placeholder {
     color: #2c4a0b;
-  }
+  }f
 
   & #searchBtn {
     border-radius: 0px 9px 9px 0px;
-    background-color: #6a953c;
+    background-color: #68bf0b;
     width: 60px;
     border: 0px;
-    border-color: #000;
+    border-color: #849e04;
+    box-shadow: #849e04;
+    font-size: 30px;
   }
 }
 
@@ -102,13 +104,13 @@ nav {
   width: 320px;
   z-index: 10;
   position: fixed;
-  margin-top: 390px;
+  margin-top: 330px;
 }
 
 #aviso{
   width: 700px;
   margin-top: 200px;
-  margin-left: 240px;
+  margin-left: 210px;
 
 }
 
@@ -222,7 +224,7 @@ textarea {
 #topic-content {
   font-size: 30px;
   text-align: center;
-  width: 650px;
+  width: 900px;
   margin: auto;
   color: #90d14b;
 }

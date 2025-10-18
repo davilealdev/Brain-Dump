@@ -13,19 +13,25 @@ window.onload = function () {
                 <br>
                 <div id="postDate">Postado dia (${post.postDay}/${
       post.postMonth
-    }/${post.postYear}) as ${post.postHour}:${post.postMinutes}</div>
+    }/${post.postYear}) às ${post.postHour}:${post.postMinutes}</div>
                 <br>
-                <button onclick="abrirTopico(${i})">
-                    👁️
-                </button>
+                <abbr title="Ver Tópico Completo">
+                  <button onclick="abrirTopico(${i})">
+                      👁️
+                  </button>
+                </abbr>
 
-                <button onclick="editarPost(${i})">
-                    ✏️
-                </button>
+                <abbr title="Editar Tópico">
+                  <button onclick="editarPost(${i})">
+                      ✏️
+                  </button>
+                </abbr>
 
-                <button onclick="deletarPost('${post.titleInput}')">
-                    🗑️
-                </button>
+                <abbr title="Excluir Tópico">
+                  <button onclick="deletarPost('${post.titleInput}')">
+                      🗑️
+                  </button>
+                </abbr>
             </div>
             <hr>`;
 
@@ -85,17 +91,29 @@ searchButton.addEventListener("click", () => {
     topic.innerHTML = `
       <div id="post">
           <h1 id="topic-title">${post.titleInput.slice(0, 30)}...</h1>
-          <h2 id="topic-prev">${post.contentInput.slice(0, 20)}.....</h2>
+          <h2 id="topic-prev">${post.contentInput.slice(0, 21)}.....</h2>
           <br>
           <div id="postDate">Postado dia (${post.postDay}/${post.postMonth}/${
       post.postYear
     }) às ${post.postHour}:${post.postMinutes}</div>
-          <button onclick="abrirTopico(${posts.indexOf(post)})">
+    <br>
+          <abbr title="Ver Tópico Completo">
+            <button onclick="abrirTopico(${posts.indexOf(post)})">
               👁️
-          </button>
-          <button onclick="deletarPost('${post.titleInput}')">
+            </button>
+          </abbr>
+
+          <abbr title="Editar Tópico">
+            <button onclick="editarPost(${i})">
+              ✏️
+              </button>
+          </abbr>
+
+          <abbr title="Deletar Tópico">
+            <button onclick="deletarPost('${post.titleInput}')">
               🗑️
-          </button>
+            </button>
+          </abbr>
       </div>
       <hr>
     `;

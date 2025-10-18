@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 
+body {
+  margin: 0px;
+  
+  background-color: #0b0014;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+/* General Configurations */
 * {
   font-family: "Pixelify Sans", sans-serif;
   font-weight: 700;
@@ -9,38 +22,23 @@ a {
   text-decoration: none;
 }
 
-body {
-  margin: 0px;
-  overflow: hidden;
-  background-color: #0B0014;
-  color: white;
-  width: 100vw;
-  height: 100vh;
-
-}
-
-hr{
+hr {
   width: 400px;
 }
 
+/* Navbar Estilization */
+
 nav {
-  background-image: linear-gradient(to right,#aec446 ,#dcf469);
+  background-image: linear-gradient(to right, #aec446, #dcf469);
   padding: 10px;
   margin-left: 0px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   border-width: 0px 0px 10px 0px;
   border-color: rgb(35, 212, 35);
   border-style: solid;
   height: 80px;
-
-  & h1 {
-    font-size: 30px;
-
-    & a {
-      color: #3c660e;
-    }
-  }
 
   & h3 {
     margin-top: 30px;
@@ -57,70 +55,70 @@ nav {
   & input,
   button {
     height: 60px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
   }
 
   & #searchbar {
-    margin-left: 120svh;
     padding: 10px;
     font-size: larger;
-    border-radius: 5px 0px 0px 15px;
-    border: 4px 4px 0px 34px;
+    border-radius: 15px 5px 5px 15px;
     border-color: #b3ff10;
-    width: 290px;
-    border: 2px;
+    width: 990px;
   }
 
   #searchbar::placeholder {
     color: #2c4a0b;
-  }f
+  }
 
   & #searchBtn {
-    border-radius: 0px 9px 9px 0px;
+    border-radius: 9px;
     background-color: #68bf0b;
-    width: 60px;
-    border: 0px;
+    width: 90px;
+    border-left: -390px;
     border-color: #849e04;
     box-shadow: #849e04;
-    font-size: 30px;
   }
 }
 
-#closeButton{
+#closeButton {
   margin-left: 20px;
 }
 
+/* Left size Estilization */
 #counter {
- 
   position: fixed;
   z-index: 10;
   font-size: 26px;
   font-weight: 700;
   margin-left: 20px;
-  margin-top: 60px;
+  margin-top: 15px;
 }
 
-.rand{
+.rand {
   width: 320px;
   z-index: 10;
   position: fixed;
   margin-top: 330px;
 }
 
-#aviso{
+/* Main Page Estilization */
+
+#aviso {
   width: 700px;
   margin-top: 200px;
   margin-left: 210px;
 
+  text-align: center;
 }
 
-#warning-link{
+#warning-link {
   color: rgb(56, 255, 56);
   text-decoration: underline;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-#warning-link:hover{
+#warning-link:hover {
   cursor: pointer;
 }
 
@@ -132,18 +130,21 @@ nav {
   text-shadow: 1px 1px #6a953b;
 }
 
+/* Container and posts estilization */
 #container {
   background-color: #5f5f5f55;
   color: #000;
-  margin: auto;
+  margin-left: auto;
+
   padding: 20px;
-  margin-right:0px;
-  width: 1170px;
-  height: 100vh;
+  width: 75vw;
+  min-height: 100vh;
+  height: auto;
   border-width: 0px 8px 0px 8px;
   border-color: rgb(35, 212, 35);
   border-style: solid;
-  overflow: scroll;
+  overflow-y: visible; /* scroll controlado pelo body */
+  /* position: relative; */
 }
 
 #container::-webkit-scrollbar {
@@ -216,7 +217,6 @@ textarea {
   color: white;
   border-radius: 6px;
   padding: 5px;
-
 }
 
 /*Página View: */
@@ -229,10 +229,9 @@ textarea {
   color: #90d14b;
 }
 
-
-#todo{
+#todo {
   float: right;
   position: fixed;
-  display: flex;  
+  display: flex;
   justify-content: end;
 }

@@ -17,26 +17,25 @@ A ideia é ter um espaço onde você possa **"despejar o cérebro"** — anotar 
 
 ## 💡 Como funciona
 
-1. **Entre no site.**  
-2. **Crie um tópico** escrevendo um título e o conteúdo da ideia.  
-3. O app automaticamente **gera uma prévia** que aparece na página principal.  
+1. **Entre no site.**
+2. **Crie um tópico** escrevendo um título e o conteúdo da ideia.
+3. O app automaticamente **gera uma prévia** que aparece na página principal.
 4. Você pode **editar, excluir ou abrir o tópico completo** quando quiser.
 
 ---
 
 ## 🧰 Tecnologias usadas
 
-- **HTML5**  
-- **CSS3**  
-- **JavaScript (puro)**  
-
+- **HTML5**
+- **CSS3**
+- **JavaScript (puro)**
 
 ---
 
 ## 🎨 Design e experiência
 
 O foco do Brain Dump é a **clareza e simplicidade**.  
-Sem distrações — apenas um ambiente limpo para pensar, escrever e organizar ideias.  
+Sem distrações — apenas um ambiente limpo para pensar, escrever e organizar ideias.
 
 ---
 
@@ -48,6 +47,6 @@ Se quiser rodar localmente:
 git clone https://github.com/seu-usuario/brain-dump.git
 cd brain-dump
 # Abra o index.html no navegador
-````
+```
 
 <h1 align="center"> Made with ❤️ by Davi Leal </h1>

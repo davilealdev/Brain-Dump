@@ -11,29 +11,25 @@ window.onload = function () {
                 <h1 id="topic-title">${post.titleInput.slice(0, 30)}...</h1>
                 <h2 id="topic-prev">${post.contentInput.slice(0, 21)}.....</h2>
                 <br>
-                <div id="postDate">Postado dia (${post.postDay}/${
+                <div id="postDate">Postado em: ${post.postDay}/${
       post.postMonth
-    }/${post.postYear}) às ${post.postHour}:${post.postMinutes}</div>
+    }/${post.postYear} às ${post.postHour}:${post.postMinutes}</div>
                 <br>
-                <abbr title="Ver Tópico Completo">
+                
                   <button onclick="abrirTopico(${i})">
-                      👁️
+                      Ver 
                   </button>
-                </abbr>
 
-                <abbr title="Editar Tópico">
                   <button onclick="editarPost(${i})">
-                      ✏️
+                      Editar
                   </button>
-                </abbr>
 
-                <abbr title="Excluir Tópico">
                   <button onclick="deletarPost('${post.titleInput}')">
-                      🗑️
+                      Excluir
                   </button>
-                </abbr>
+                
             </div>
-            <hr>`;
+            `;
 
     let count = document.getElementById("topics-counter");
     count.innerText = posts.length;

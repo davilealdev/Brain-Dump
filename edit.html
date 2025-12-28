@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Braindump | Editar tópico</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <link rel="shortcut icon" href="images/Randonetheone.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/uiverse.css">
+  <link rel="shortcut icon" href="assets/froggou icon.png" type="image/x-icon">
 </head>
 <body>
   <nav>
    
-    <h3><a href="index.html"> < Voltar</a></h3>
-  
+    <a id="backPageBtn" href="index.html">
+        <button>
+           <h3> < Voltar </h3>
+        </button>
+    </a>
   </nav>
 
   <main>
-    <img style="width: 320px; z-index: 0; position: fixed;" src="images/Randonetheone.png" alt=""/>
-    <div style="margin:auto; width: 800px; " id="container">
-      
+    <img style="width: 320px; z-index: 0; position: fixed;" src="images/froggone.png" alt=""/>
+
+    <div style="margin:auto; width: 800px; " id="container">  
       <input type="text" id="edit-title" placeholder="Título do post" />
-    
       <textarea id="edit-content" placeholder="Conteúdo do tópico"></textarea>
       <button id="postBtn" onclick="salvarEdicao()">Salvar</button>
     </div>

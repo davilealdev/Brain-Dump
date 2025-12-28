@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Braindump | Home</title>
+    <title>BrainDump</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/uiverse.css">
-    <link rel="shortcut icon" href="images/Randonetheone.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/froggou icon.png" type="image/x-icon">
   </head>
   <body>
     <nav id="navBar">
        <a href="">
          <h1 id="greetings">
-          Boa Tarde <span style="color: rgb(1, 86, 11);">Davi</span> !
+          Eae <span style="color: #5e6033;">Davi</span> !
                </h1>
        </a>
       
@@ -27,8 +27,8 @@
          <abbr title="Pesquisar"><button id="searchBtn"> > </button></abbr>
       </div>
 
-      <div id="profile">
-        <a href="">
+      <div id="profile" onclick="mostraPerfil()">
+        <a href="profile.html">
           <img id="pfp" src="images/standart pfp.png" alt="">
         </a>
       </div>
@@ -40,9 +40,9 @@
         <div id="info">
           <abbr title="Criar Novo Tópico"><a href="create.html"> <button id="createBtn">+</button> </a></abbr>
             <br>
-          Tópicos Postados: <span id="topics-counter">0</span>
+          Tópicos criados: <span id="topics-counter">0</span>
             <br>
-          level = <span id="xp-counter"">0xp</span>
+          Nível = <span id="xp-counter"">0xp</span>
       </div>
         
         <div id="aviso" >
@@ -57,6 +57,7 @@
     <script src="js/index.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/userConfig.js"></script>
 
     <script>
       const { app } = require('@electron/remote');

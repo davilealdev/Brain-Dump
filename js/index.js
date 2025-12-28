@@ -75,9 +75,9 @@ searchButton.addEventListener("click", () => {
 
   if (resultados.length === 0) {
     container.innerHTML = `
-    <p style='text-align:center; font-size:20px; color:#aac525;'>Nenhum tópico encontrado.</p> 
+    <p style='text-align:center; font-size:30px; color:#aac525;'>Nenhum tópico encontrado.</p> 
     <br> 
-    <img style="width:180px;margin-left:490px;" src="images/sad frogone.png">
+    <img style="width:200px;margin:auto;display:flex; justify-content:center;" src="images/sad frogone.png">
     `;
     return;
   }
@@ -93,23 +93,19 @@ searchButton.addEventListener("click", () => {
       post.postYear
     }) às ${post.postHour}:${post.postMinutes}</div>
     <br>
-          <abbr title="Ver Tópico Completo">
+
             <button onclick="abrirTopico(${posts.indexOf(post)})">
-              👁️
+              Ver
             </button>
-          </abbr>
 
-          <abbr title="Editar Tópico">
             <button onclick="editarPost(${i})">
-              ✏️
+              Editar
               </button>
-          </abbr>
 
-          <abbr title="Deletar Tópico">
             <button onclick="deletarPost('${post.titleInput}')">
-              🗑️
+              Excluir
             </button>
-          </abbr>
+
       </div>
       <hr>
     `;

@@ -41,7 +41,7 @@ function createThread() {
       postMonth = "Dez";
 
     default:
-      console.log("Não existe esse mês não chefe");
+      console.log("Mês Inválido");
   }
 
   switch (postDay) {

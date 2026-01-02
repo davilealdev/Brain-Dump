@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
   margin: 0px;
@@ -8,7 +11,7 @@ body {
   color: white;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Configurações Gerais */
@@ -246,14 +249,16 @@ textarea {
     border: 5px solid #6ec40d;
 }
 
+textarea::-webkit-scrollbar{
+  background-color: #6ec40d;
+  width: 10px;
+  border-radius: 10px;
+}
+
 #postBtn {
   margin-left: 670px ;
- 
   width: 90px;
   height: 50px;
-
- 
-  
   padding: 5px;
 }
 
@@ -261,10 +266,12 @@ textarea {
 
 #topic-content {
   font-size: 30px;
-  text-align: center;
+  line-height: 1.6;
   width: 900px;
   margin: auto;
-  color: #90d14b;
+  color: #e5e7eb;
+  font-family: "Inter", sans-serif;
+  
 }
 
 #todo {
@@ -276,7 +283,7 @@ textarea {
 
 /* Página de Perfil */
 #frogIcon{
-   width: 290px;
+   width: 205px;
    margin: auto;
 }
 
@@ -288,22 +295,25 @@ textarea {
   padding: 10px;
   border-radius: 20px;
   border: 5px solid rgb(79, 136, 5);
-  width:600px;
+  width:500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
-form{
+#userInfo{
   margin: auto;
-  background-color: #07701033;
+  background-color: #07da19af;
   padding: 10px;
   border-radius: 5px;
+  border: 3px solid #6b7f06;
 }
 
 #nameInput{
   height: 45px;
-  
+  color: #202020;
+  font-size: larger;
   background-color: #89e36d;
   border: 3px solid rgb(35, 124, 18);
   border-radius: 0.4em;

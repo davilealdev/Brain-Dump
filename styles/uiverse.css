@@ -62,5 +62,14 @@ button#createBtn:active {
   background-image: radial-gradient(rgba(24, 8, 200, 0.171) 2px, transparent 0);
   background-size: 30px 30px;
   background-position: -5px -5px;
-  overflow-y: scroll;
+
+}
+
+.hero {
+  /* Add your background pattern here */
+  background-color: #b3a20a;
+  background-image: radial-gradient(rgba(108, 113, 7, 0.452) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+ 
 }

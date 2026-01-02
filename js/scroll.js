@@ -19,21 +19,21 @@ sr.reveal(' #post', {delay:200, origin:'top'})
 
 
 
-const container = document.getElementById("container");
-const navBar = document.getElementById("navBar")
-// let info = document.getElementById("info")
+const container = document.querySelector("body");
+const navBar = document.getElementById("navBar");
+let info = document.getElementById("info");
 
 
 container.addEventListener("scroll", () => {
-    if(container.scrollTop > 80){
+    if(container.scrollTop > 30){
         container.classList.add("scrolled")
         navBar.style.display = "none"
-        // info.style.display = "none"
+         info.style.display = "none"
 
     } else{
         container.classList.remove("scrolled");        
         navBar.style.display = "flex"
-        // info.style.display = "block"
+        info.style.display = "block"
     }
 
 

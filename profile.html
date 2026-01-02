@@ -22,19 +22,25 @@
 
     
     <main class="container">
-        <div id="hero">
-            <img id="frogIcon" src="images/froggone.png" alt="">
-            <form action="">
+        <div id="hero" class="hero">
+            
+            <div id="userInfo">
                 <h2>Digíte Seu Nome De Usuário:</h2>
                 <br>
-                <input required="true" type="text" name="nameInput" id="nameInput">
-                <button>Salvar</button>
-            </form>
-            <br>
-            <h3>NÚMERO DE TÓPICOS: <span id="topics-counter">0</span></h3>
-            <h3>NÍVEL: <span id="xp-counter">0</span>XP</h3>
+                <abbr title="MÁXIMO 15 LETRAS | MÍNIMO 5 LETRAS">
+                    <input autocomplete="off" required="true" type="text"  id="nameInput" class="nameInput">
+                </abbr>
+                <button id="saveNameBtn" onclick="saveName()">Salvar</button>
+                <h3 id="status"></h3>
+            </div>
+             <br>
+            <h2 style="background-color: rgba(240, 248, 255, 0.288); padding: 3px; border-radius: 5px; width: 300px; margin: auto;">NÚMERO DE TÓPICOS: <span id="topics-counter">0</span></h2>
+            <img id="frogIcon" src="images/froggone.png" alt="">
+         
         </div>
     </main>
+   
+    <script src="js/userConfig.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

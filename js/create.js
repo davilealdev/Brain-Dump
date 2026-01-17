@@ -4,7 +4,7 @@ function createThread() {
   let postMonth = data.getMonth() + 1;
 
   switch (postMonth) {
-    case 0:
+    case 1:
       postMonth = "Jan";
       break;
     case 2:

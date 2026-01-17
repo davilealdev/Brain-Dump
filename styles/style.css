@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
   margin: 0px;
   padding: 0px;
-  
+
   background-color: #0b0014;
   color: white;
   width: 100vw;
@@ -29,14 +29,14 @@ hr {
   color: #077010;
 }
 
-#backPageBtn{
- margin: auto;
-  & button{
+#backPageBtn {
+  margin: auto;
+  & button {
     width: 120px;
     background-color: #0b0014;
     color: #0bf10b;
     border-color: #0bf10b;
-    & h3{
+    & h3 {
       margin: auto;
     }
   }
@@ -57,19 +57,19 @@ nav {
   border-style: solid;
 
   height: 80px;
-  
 
- 
-  & #greetings{
-      color: #0B0014;
-      font-size: 30px;
+  & #greetings {
+    color: #0b0014;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.288);
+    padding: 3px;
   }
 
   & input,
   button {
     height: 60px;
     margin-top: 10px;
-
   }
 
   & #searchbar {
@@ -85,7 +85,7 @@ nav {
     margin: auto;
   }
 
-  #searchbar:focus{
+  #searchbar:focus {
     outline: none;
   }
 
@@ -104,7 +104,7 @@ nav {
     color: #aec446;
   }
 
-  & #pfp{
+  & #pfp {
     margin-top: 5px;
     width: 60px;
     border-radius: 30%;
@@ -113,9 +113,7 @@ nav {
     border-style: solid;
     border-width: 3px;
   }
-
 }
-
 
 #info {
   position: fixed;
@@ -131,13 +129,13 @@ nav {
   border-radius: 10px;
 }
 
-#topics-counter, #xp-counter {
+#topics-counter,
+#xp-counter {
   font-size: 27px;
   font-weight: 900;
   color: #6b7f06;
   text-shadow: 2px 1px #6a953b;
 }
-
 
 /* Main Page Estilization */
 
@@ -166,21 +164,17 @@ nav {
 }
 /* AVISO /\ */
 
-
-
 /* Container and posts estilization */
 #container {
-  
   color: #000;
   padding: 30px;
   width: 100vw;
   height: 110vh;
   overflow-y: scroll;
-   transition: padding 0.25s ease;
-
+  transition: padding 0.25s ease;
 }
 
-#container.scrolled{
+#container.scrolled {
   padding-bottom: 100px;
   margin-bottom: 30px;
 }
@@ -193,12 +187,12 @@ nav {
 
 #post {
   width: 800px;
-  
+
   margin: auto;
   margin-bottom: 20px;
   background-color: #aec446;
   padding: 5px;
-  border-width: 5px ;
+  border-width: 5px;
   border-radius: 7px;
   border-color: rgb(60, 151, 7);
   border-style: solid;
@@ -246,17 +240,17 @@ textarea {
   font-size: 20px;
   color: rgb(22, 87, 4);
   background-color: #90d14b;
-    border: 5px solid #6ec40d;
+  border: 5px solid #6ec40d;
 }
 
-textarea::-webkit-scrollbar{
+textarea::-webkit-scrollbar {
   background-color: #6ec40d;
   width: 10px;
   border-radius: 10px;
 }
 
 #postBtn {
-  margin-left: 670px ;
+  margin-left: 670px;
   width: 90px;
   height: 50px;
   padding: 5px;
@@ -271,7 +265,6 @@ textarea::-webkit-scrollbar{
   margin: auto;
   color: #e5e7eb;
   font-family: "Inter", sans-serif;
-  
 }
 
 #todo {
@@ -282,27 +275,36 @@ textarea::-webkit-scrollbar{
 }
 
 /* Página de Perfil */
-#frogIcon{
-   width: 205px;
-   margin: auto;
+#frogIcon {
+  width: 205px;
+  margin: auto;
 }
 
-#hero{
-  background-color:#90d14b;
+#topics-status {
+  background-color: rgba(240, 248, 255, 0.288);
+  padding: 3px;
+  border-radius: 5px;
+  width: 300px;
+  margin: auto;
+  color: #202020;
+}
+
+#hero {
+  background-color: #90d14b;
   color: #202020;
   margin: auto;
   margin-top: 30px;
   padding: 10px;
   border-radius: 20px;
   border: 5px solid rgb(79, 136, 5);
-  width:500px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-#userInfo{
+#userInfo {
   margin: auto;
   background-color: #07da19af;
   padding: 10px;
@@ -310,7 +312,7 @@ textarea::-webkit-scrollbar{
   border: 3px solid #6b7f06;
 }
 
-#nameInput{
+#nameInput {
   height: 45px;
   color: #202020;
   font-size: larger;
@@ -321,5 +323,3 @@ textarea::-webkit-scrollbar{
   cursor: pointer;
 }
 /* TESTESS:::  */
-
-

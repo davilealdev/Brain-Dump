@@ -1,59 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/uiverse.css">
-    <link rel="shortcut icon" href="assets/froggou icon.png" type="image/x-icon">
-</head>
-<style>
-#container{
-    color: white;
-    margin: auto;
-    width: 1200px;
-    height: 100vh;
-    background-color: #0f1115;
-   
-
-}
-</style>
-<body style="  overflow-y: auto;">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/uiverse.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/froggou icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    #container {
+      color: white;
+      margin: auto;
+      width: 1200px;
+      height: 100vh;
+      background-color: #0f1115;
+    }
+  </style>
+  <body style="overflow-y: auto">
     <nav>
-        
-        <a id="backPageBtn" href="index.html">
+      <a id="backPageBtn" href="index.html">
         <button>
-           <h3> < Voltar </h3>
+          <h3>< Voltar</h3>
         </button>
-    </a>
-
-        
+      </a>
     </nav>
     <main>
-        <div id="container">
-            <h1 id="topic-title" style="font-size: 38px; text-align: center; color: #e5e7eb;  font-family: Inter"></h1>
-                <br>
-            <h2 id="topic-content"></h2>
-        </div>
+      <div id="container">
+        <h1
+          id="topic-title"
+          style="
+            font-size: 38px;
+            text-align: center;
+            color: #e5e7eb;
+            font-family: Inter;
+          "
+        ></h1>
+        <br />
+        <h2 id="topic-content"></h2>
+      </div>
     </main>
 
-        <script>
-      const posts = JSON.parse(localStorage.getItem('posts')) || []
-      const index = localStorage.getItem('currentPost')
-      const post = posts[index]
+    <script>
+      const posts = JSON.parse(localStorage.getItem("posts")) || [];
+      const index = localStorage.getItem("currentPost");
+      const post = posts[index];
 
-      const title = document.getElementById("topic-title")
-      const content = document.getElementById("topic-content")
-      const pageTitle = document.querySelector("title")
-      pageTitle.innerHTML = post.titleInput
+      const title = document.getElementById("topic-title");
+      const content = document.getElementById("topic-content");
+      const pageTitle = document.querySelector("title");
+      pageTitle.innerHTML = post.titleInput;
 
       if (post) {
-        title.innerText = post.titleInput
-        content.innerText = post.contentInput
+        title.innerText = post.titleInput;
+        content.innerText = post.contentInput;
       } else {
-        title.innerText = "Tópico não encontrado"
+        title.innerText = "Tópico não encontrado";
       }
     </script>
-</body>
+  </body>
 </html>

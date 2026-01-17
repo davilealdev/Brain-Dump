@@ -1,46 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BrainDump | Meu Perfil</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/uiverse.css">
-    <link rel="shortcut icon" href="images/froggone.png" type="image/x-icon">      
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/uiverse.css" />
+    <link rel="shortcut icon" href="images/froggone.png" type="image/x-icon" />
+  </head>
 
+  <style>
+    body {
+      overflow-y: hidden;
+    }
+  </style>
+
+  <body>
     <nav id="navBar">
-
-    <a id="backPageBtn" href="index.html">
+      <a id="backPageBtn" href="index.html">
         <button>
-           <h3> < Voltar </h3>
+          <h3>< Voltar</h3>
         </button>
-    </a>
-        
+      </a>
     </nav>
 
-    
     <main class="container">
-        <div id="hero" class="hero">
-            
-            <div id="userInfo">
-                <h2>Digíte Seu Nome De Usuário:</h2>
-                <br>
-                <abbr title="MÁXIMO 15 LETRAS | MÍNIMO 5 LETRAS">
-                    <input autocomplete="off" required="true" type="text"  id="nameInput" class="nameInput">
-                </abbr>
-                <button id="saveNameBtn" onclick="saveName()">Salvar</button>
-                <h3 id="status"></h3>
-            </div>
-             <br>
-            <h2 style="background-color: rgba(240, 248, 255, 0.288); padding: 3px; border-radius: 5px; width: 300px; margin: auto;">NÚMERO DE TÓPICOS: <span id="topics-counter">0</span></h2>
-            <img id="frogIcon" src="images/froggone.png" alt="">
-         
+      <div id="hero" class="hero">
+        <div id="userInfo">
+          <h2>Digíte Seu Nome De Usuário:</h2>
+          <br />
+          <abbr title="MÁXIMO 15 LETRAS | MÍNIMO 5 LETRAS">
+            <input
+              autocomplete="off"
+              required="true"
+              type="text"
+              id="nameInput"
+              class="nameInput"
+            />
+          </abbr>
+          <button id="saveNameBtn" onclick="saveName()">Salvar</button>
+          <h3 id="status">
+            digite um nome de no máximo 15 caracteres <br />
+            e no mínimo <span style="color: green">5 Letras</span>
+          </h3>
         </div>
+        <br />
+        <h2 id="topics-status">
+          NÚMERO DE TÓPICOS: <span id="topics-counter">0</span>
+        </h2>
+        <img id="frogIcon" src="images/froggone.png" alt="" />
+      </div>
     </main>
-   
+
     <script src="js/userConfig.js"></script>
-    <script src="js/index.js"></script>
-</body>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll.js"></script>
+  </body>
 </html>

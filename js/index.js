@@ -12,8 +12,8 @@ window.onload = function () {
                 <h2 id="topic-prev">${post.contentInput.slice(0, 21)}.....</h2>
                 <br>
                 <div id="postDate">Postado em: ${post.postDay}/${
-      post.postMonth
-    }/${post.postYear} às ${post.postHour}:${post.postMinutes}</div>
+                  post.postMonth
+                }/${post.postYear} às ${post.postHour}:${post.postMinutes}</div>
                 <br>
                 
                   <button onclick="abrirTopico(${i})">
@@ -70,7 +70,7 @@ searchButton.addEventListener("click", () => {
   const resultados = posts.filter(
     (post) =>
       post.titleInput.toLowerCase().includes(termo) ||
-      post.contentInput.toLowerCase().includes(termo)
+      post.contentInput.toLowerCase().includes(termo),
   );
 
   if (resultados.length === 0) {
@@ -90,10 +90,9 @@ searchButton.addEventListener("click", () => {
           <h2 id="topic-prev">${post.contentInput.slice(0, 21)}.....</h2>
           <br>
           <div id="postDate">Postado dia (${post.postDay}/${post.postMonth}/${
-      post.postYear
-    }) às ${post.postHour}:${post.postMinutes}</div>
+            post.postYear
+          }) às ${post.postHour}:${post.postMinutes}</div>
     <br>
-
             <button onclick="abrirTopico(${posts.indexOf(post)})">
               Ver
             </button>
@@ -111,8 +110,4 @@ searchButton.addEventListener("click", () => {
     `;
     container.appendChild(topic);
   });
-});
-
-searchInput.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") searchButton.click();
 });
